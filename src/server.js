@@ -8,7 +8,7 @@ import fs from 'fs';
 
 import usersRouter from './routers/users.js';
 import categoriesRouter from './routers/categories.js';
-import subCategoriesRouter from './routers/subcategories.js';
+import subCategoriesRouter from './routers/subCategories.js';
 import productsRouter from './routers/products.js';
 
 const app = express();
