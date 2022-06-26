@@ -1,0 +1,36 @@
+[
+    {
+        "username": "test1",
+        "password": "045928218d6d5a42f976163d70cdfe9226e9d1c3ea6bf1647ae1d8f44c2edc7d",
+        "email": "somemail@gal.com",
+        "id": 1
+    },
+    {
+        "username": "test2\n",
+        "password": "045928218d6d5a42f976163d70cdfe9226e9d1c3ea6bf1647ae1d8f44c2edc7d",
+        "email": "somemail@gal.com",
+        "avatar": "1656184820559_test2_avatar",
+        "id": 2
+    },
+    {
+        "username": "test2",
+        "password": "045928218d6d5a42f976163d70cdfe9226e9d1c3ea6bf1647ae1d8f44c2edc7d",
+        "email": "somemail@gal.com",
+        "avatar": "1656184825169_test2_avatar",
+        "id": 3
+    },
+    {
+        "username": "test3",
+        "password": "045928218d6d5a42f976163d70cdfe9226e9d1c3ea6bf1647ae1d8f44c2edc7d",
+        "email": "somemail@gal.com",
+        "avatar": "1656184923076_test3_avatar.png",
+        "id": 4
+    },
+    {
+        "username": "test4",
+        "password": "045928218d6d5a42f976163d70cdfe9226e9d1c3ea6bf1647ae1d8f44c2edc7d",
+        "email": "somemail@gal.com",
+        "avatar": "1656185240865_test4_avatar.png",
+        "id": 5
+    }
+]
