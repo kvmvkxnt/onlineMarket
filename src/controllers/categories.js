@@ -1,11 +1,11 @@
 import { InternalServerError, ForbiddenError, notFoundError } from '../utils/errors.js';
 import { read, write } from '../utils/model.js';
 
-function GET(req, res, _) {
+function GET(req, res, next) {
   try {
     let { id } = req.params;
     let categories = read('categories');
-    let subCategories = read('subCategories');
+    let subCategories = read('subcategories');
 
     subCategories.map(sub => {
       sub.subCategoryId = sub.sub_category_id;
@@ -91,7 +91,7 @@ function POST(req, res, next) {
 function PUT(req, res, next) {
   try {
     let categories = read('categories');
-    let subCategories = read('subCategories');
+    let subCategories = read('subcategories');
     let { categoryName } = req.body;
     let { id } = req.params;
     let editable = categories.find(cat => cat.category_id == id);
@@ -146,7 +146,7 @@ function PUT(req, res, next) {
 function DELETE(req, res, next) {
   try {
     let categories = read('categories');
-    let subCategories = read('subCategories');
+    let subCategories = read('subcategories');
     let { id } = req.params;
     let deletableIndex = categories.findIndex(cat => cat.category_id == id);
     let deletedSubs;
@@ -177,7 +177,7 @@ function DELETE(req, res, next) {
     delete deleted.category_id;
     delete deleted.category_name;
 
-    write('subCategories', subCategories);
+    write('subcategories', subCategories);
     write('categories', categories);
 
     res.status(201).json({
